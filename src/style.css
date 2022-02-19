@@ -1,0 +1,111 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #581ae7,
+        #6f0b97
+    );
+}
+#preloader{
+    background: linear-gradient(to bottom, #6117a5, #1614a8);
+    background-image: url("image/NDS.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 30%;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+}
+
+.clock{
+    width: 550px;
+    height: 150px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.clock div{
+    position: relative;
+    background-color: linear-gradient(
+        #581ae7,
+        #0b5897
+    );
+    height: 100%;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 60px;
+    color: #000000;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(255, 0, 0, 0.3);
+    letter-spacing: 3px;
+}
+.clock span{
+    font-weight: bolder;
+    font-size: 60px;
+    color: #ffffff;
+}
+.links{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    bottom: 10%;
+}
+.main__btn{
+    font-size: 1rem;
+    background-image: linear-gradient(to top, #d620c7 0%, #fe5196 100%);
+    padding: 14px 32px;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+.main__btn a{
+    position: relative;
+    z-index: 2;
+    color:  rgb(0, 0, 0);
+    text-decoration:  none;
+}
+
+.main__btn:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #170b9ca9;
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.main__btn:hover {
+    color: #fff;
+}
+
+.main__btn:hover:after{
+    width: 100%;
+}
+
+.main_menu{
+    position: absolute;
+    left: 35%;
+}
+
